@@ -2,19 +2,34 @@
   "name": "nodejs-image-demo",
   "version": "1.0.0",
   "description": "nodejs image demo",
-  "author": "Sammy the Shark <sammy@example.com>",
-  "license": "MIT",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app.js"
-  }
-  //"main": "app.js",
-  "keywords": [
-    "nodejs",
-    "bootstrap",
-    "express"
-  ],
+  "main": "app.js",
   "dependencies": {
-    "express": "^4.16.4"
-  }
+    "chai": "^3.5.0",
+    "chai-http": "^2.0.1",
+    "ejs": "^2.4.1",
+    "express": "^4.13.4",
+    "mocha": "^2.4.5",
+    "mongodb": "^2.1.16",
+    "morgan": "^1.7.0",
+    "object-assign":"4.1.0"
+  },
+  "engine": {
+    "node": "*",
+    "npm": "*"
+  },
+  "scripts": {
+    "start": "node app.js",
+    "test": "IP=0.0.0.0 PORT=3030 mocha --timeout 5000 tests/*_test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/balakumar98/node_project.git"
+  },
+  "author": "IRIS <bala@iris.com>",
+  "license": "BK",
+  "bugs": {
+    "url": "http://github.com/balakumar98/node_project/issues"
+  },
+  "homepage": "http://github.com/balakumar98/node_project"
+  
 }
